@@ -23,8 +23,30 @@
   <link rel="stylesheet" type="text/css" href="assets/css/virtual.css">
 
   <link rel="stylesheet" type="text/css" href="assets/css/minibar.virtual.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/theme-toggles@4.10.1/css/dark-inner.min.css">
 </head>
-<body class="theme-purple">
+
+<body class="theme-dark">
+<!-- LIGHT SWITCH -->
+<div id="toggle-dark-theme" class="light-switch">
+  <label class="theme-toggle" title="Toggle theme">
+    <input id="dark-theme-change" type="checkbox" />
+    <span class="theme-toggle-sr">Toggle theme</span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      width="5em"
+      height="5em"
+      class="theme-toggle__dark-inner"
+      fill="currentColor"
+      viewBox="0 0 32 32"
+    >
+      <path d="M16 9c3.9 0 7 3.1 7 7s-3.1 7-7 7" />
+      <path d="M16 .5C7.4.5.5 7.4.5 16S7.4 31.5 16 31.5 31.5 24.6 31.5 16 24.6.5 16 .5zm0 28.1V23c-3.9 0-7-3.1-7-7s3.1-7 7-7V3.4C23 3.4 28.6 9 28.6 16S23 28.6 16 28.6z" />
+    </svg>
+  </label>
+</div>
 
   <!-- Back to top button -->
   <div class="btn-back_to_top">
@@ -46,7 +68,8 @@
     <div class="set-menu">
       <p>Selecione a Cor</p>
       <div class="color-bar" data-toggle="selected">
-        <span class="color-item bg-theme-purple selected" data-class="theme-purple"></span>
+        <span style="display: none;" id='dark-theme' class="color-item bg-theme-dark selected" data-class="theme-dark"></span>
+        <span id="default-theme" class="color-item bg-theme-purple" data-class="theme-purple"></span>
         <span class="color-item bg-theme-red" data-class="theme-red"></span>
         <span class="color-item bg-theme-blue" data-class="theme-blue"></span>
         <span class="color-item bg-theme-green" data-class="theme-green"></span>
@@ -208,11 +231,14 @@
               <li>
                 <div class="title">2022 - Atualmente</div>
                 <div class="details">
-                  <h5>Locaweb</h5>
+                  <img style="width: 30%" src="assets/img/logo_locaweb.png" alt="logo">
                   <small class="fg-theme">Desenvolvedor Senior Ruby on Rails</small>
                   <p>Trabalhando atualmente no time de e-mail responsável pela
-                    manutenção, atualização e concepção de novas features, responsável pela migração de mais de 8 milhões de clientes,
+                    manutenção, atualização e concepção de novas features,
                     ponto de referencia de conhecimento do time.
+                  </p>
+                  <p>
+                    Responsável pela migração de mais de 8 milhões de clientes.
                   </p>
                 </div>
               </li>
@@ -389,3 +415,14 @@
 
 </body>
 </html>
+
+<script>
+  document.getElementById('dark-theme-change').addEventListener('click', function() {
+      if (document.body.classList.value === "theme-dark") {
+        document.querySelector('#default-theme').click();
+      } else {
+        document.querySelector('#dark-theme').click();
+      }
+    }
+  );
+</script>

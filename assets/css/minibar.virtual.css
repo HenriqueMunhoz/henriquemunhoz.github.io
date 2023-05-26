@@ -153,7 +153,7 @@
         line-height: 28px;
         font-size: 21px;
     }
-    
+
     .main-menu .menu-link:hover .caption, .main-menu .active .menu-link .caption {
         opacity: 1;
         visibility: visible;
@@ -336,7 +336,7 @@
 .vg-page {
     position: relative;
     padding: 70px 16px;
-    color: #858B91;
+    color: #464B51;
     z-index: 10;
     overflow: hidden;
 }
@@ -603,6 +603,7 @@
 
 /* Theme color style */
 /* Theme Red */
+
 .theme-red .topbar-nav .toggle-menu:hover {
     color: #EF3724;
 }
@@ -633,6 +634,10 @@
 }
 
 .theme-red .post-grid .post-category {
+    color: #EF3724;
+}
+
+.theme-red .light-switch {
     color: #EF3724;
 }
 
@@ -676,6 +681,9 @@
     color: #2960f7;
 }
 
+.theme-blue .light-switch {
+    color: #2960f7;
+}
 
 /* Theme Green */
 .theme-green .topbar-nav .toggle-menu:hover {
@@ -713,6 +721,10 @@
 }
 
 .theme-green .post-grid .post-category {
+    color: #8cc63f;
+}
+
+.theme-green .light-switch {
     color: #8cc63f;
 }
 
@@ -756,6 +768,10 @@
     color: #fd7e14;
 }
 
+.theme-orange .light-switch {
+    color: #fd7e14;
+}
+
 
 /* Theme Purple */
 .theme-purple .topbar-nav .toggle-menu:hover {
@@ -793,5 +809,9 @@
 }
 
 .theme-purple .post-grid .post-category {
+    color: #6f42c1;
+}
+
+.theme-purple .light-switch {
     color: #6f42c1;
 }

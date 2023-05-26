@@ -63,6 +63,46 @@ body {
   background-color: #fff;
 }
 
+body.theme-dark {
+  background-color: #282A36;
+}
+
+.theme-dark .fg-dark {
+  color: #50FA7B !important;
+}
+
+.theme-dark .light-switch {
+  color: white;
+}
+
+.theme-dark .vg-page {
+  color: #B0B1B1;
+}
+
+.theme-dark .btn-theme {
+  background-color: #8e195d;
+}
+
+.theme-dark .btn-theme:hover, .btn-theme:active {
+  background-color: #a8206f !important;
+}
+
+.theme-dark .progress-bar {
+  background-color: #8e195d;
+}
+
+.theme-dark .fw-medium {
+  color: #a8206f;
+}
+
+.theme-dark hr {
+  border-top: 1px solid rgba(255, 224, 224, 0.1);
+}
+
+.theme-dark .timeline li .details {
+  background-color: #090A0D;
+}
+
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
@@ -10276,3 +10316,13 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+.light-switch {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1000;
+}
