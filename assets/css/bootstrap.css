@@ -103,6 +103,10 @@ body.theme-dark {
   background-color: #090A0D;
 }
 
+.theme-dark .timeline li:first-child .title {
+  background-color: #8e195d !important;
+}
+
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
